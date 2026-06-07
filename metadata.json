@@ -1,0 +1,8 @@
+{
+  "name": "Remix: VibeDirector AI",
+  "description": "AI-powered storyboard co-pilot that drafts and simulates high-retention short-form video storyboards for TikTok, Reels, and Shorts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

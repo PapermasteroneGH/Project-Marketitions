@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;650;800&family=Space+Grotesk:wght@400;500;600;750;800&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Vibrant Palette neo-brutalist color scheme */
+  --color-vibrant-cream: #fdfcf6;
+  --color-vibrant-orange: #ff5c00;
+  --color-vibrant-yellow: #ffcc00;
+  --color-vibrant-cyan: #00d1ff;
+  --color-vibrant-violet: #8b5cf6;
+}
+
+/* Custom scrollbar for neo-brutalist design */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdfcf6;
+  border-left: 2px solid #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff5c00;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
+
+/* Cinematic Simulated GIF FX Keyframes */
+@keyframes kb-zoom {
+  0%, 100% { transform: scale(1.0); }
+  50% { transform: scale(1.12); }
+}
+
+@keyframes lateral-pan {
+  0%, 100% { transform: translateX(0px) scale(1.1); }
+  50% { transform: translateX(-15px) scale(1.1); }
+}
+
+@keyframes light-glow {
+  0%, 100% { opacity: 0.05; }
+  50% { opacity: 0.45; }
+}
+
+@keyframes hand-vibrate {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-1px, 1px) rotate(-0.5deg); }
+  45% { transform: translate(1px, -1px) rotate(0.5deg); }
+  70% { transform: translate(-1px, -1px) rotate(-0.3deg); }
+  85% { transform: translate(1px, 1px) rotate(0.4deg); }
+}
+
+@keyframes film-grain-jitter {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-1px, -1px); }
+  30% { transform: translate(1px, 2px); }
+  50% { transform: translate(-2px, -1px); }
+  75% { transform: translate(2px, 1px); }
+  90% { transform: translate(-1px, 2px); }
+}
+
+.animate-gif-zoom {
+  animation: kb-zoom 10s ease-in-out infinite;
+}
+
+.animate-gif-pan {
+  animation: lateral-pan 12s ease-in-out infinite;
+}
+
+.animate-gif-glow {
+  animation: light-glow 6s ease-in-out infinite;
+}
+
+.animate-gif-shake {
+  animation: hand-vibrate 3s ease-in-out infinite;
+}
+
+.animate-grain-jitter {
+  animation: film-grain-jitter 0.4s steps(2) infinite;
+}
+
